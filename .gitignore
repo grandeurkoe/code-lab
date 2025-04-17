@@ -1,0 +1,115 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.project
+*.classpath
+*.settings/
+target/
+
+# C++/C
+*.out
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dSYM/
+
+# C#
+bin/
+obj/
+*.exe
+*.dll
+
+# HTML/CSS/JS
+.DS_Store
+*.log
+*.min.js
+*.min.css
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln
+*.suo
+*.swp
+*.swn
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# JetBrains Rider (C# and .NET)
+.idea/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Visual Studio
+.vs/
+.vscode/
+*.vsix
+.vsconfig
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+log/
+tmp/
+
+# Go
+bin/
+pkg/
+*.exe
+*.test
+*.out
+
+# Unity
+[Ll]ibrary/
+[Ll]ogs/
+[Tt]emp/
+[Uu]serSettings/
+
+# JetBrains IDE
+*.iml
+.idea/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*.swn
+*.orig
+*.tmp
