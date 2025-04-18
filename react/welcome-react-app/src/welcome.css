@@ -1,0 +1,18 @@
+.welcomeStrip {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 600;
+}
+
+.left {
+    margin-left: 5px;
+}
+
+.right {
+    margin-right: 5px;
+}
