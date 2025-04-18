@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+
+.multiplierList, .namesList, .namesNamesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
