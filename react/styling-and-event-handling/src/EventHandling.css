@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.eventHandlingBlock {
+    background-color: aqua;
+    border: 2px solid blueviolet;
+}
