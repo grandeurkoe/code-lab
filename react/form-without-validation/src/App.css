@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+}
+
+.formBlock, .tableBlock {
+  display: flex;
+  justify-content: center;
+}
