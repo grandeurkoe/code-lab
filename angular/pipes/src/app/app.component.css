@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    padding: 20px;
+}
+
+.dateBlock {
+    background-color: #3498db;
+    color: white;
+}
+
+.stringBlock {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.sliceBlock {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.decimalBlock {
+    background-color: #f39c12;
+    color: white;
+}
+
+.percentBlock {
+    background-color: #8e44ad;
+    color: white;
+}
+
+.currencyBlock {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.customBlock {
+    background-color: #34495e;
+    color: white;
+}

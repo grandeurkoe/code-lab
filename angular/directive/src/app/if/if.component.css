@@ -1,0 +1,10 @@
+h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ifComponent {
+    background-color: #FFD6A5;
+    color: #663300;
+    height: 100px;
+}

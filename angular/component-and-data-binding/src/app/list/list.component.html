@@ -1,0 +1,16 @@
+<div id="listComponent">
+    <h2>List of Learners!</h2>
+    <div class="listBlock">
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+            </tr>
+            <tr *ngFor = "let learner of learnerList; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{learner}}</td>
+            </tr>
+        </table>          
+    </div>
+
+</div>

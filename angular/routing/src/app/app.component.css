@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #333333;
+    padding: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #1E90FF;
+}
+
+.contentBlock {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+    padding: 20px; /* Optional: Add padding around the content */
+    height: 750px;
+}

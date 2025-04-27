@@ -1,0 +1,28 @@
+h2 {
+    text-align: center; /* Center align the headings */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #333333; /* Slightly darker grey for nav */    padding: 10px;
+}
+
+a {
+    color: #FFFFFF; /* White text for readability */
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #1E90FF; /* Blue background on hover */
+    color: #FFFFFF; /* Ensure the text color remains white on hover */
+}
+
+.companyBlock {
+    background-color: #444444; /* Dark grey background */
+    color: #FFFFFF; /* White text color for contrast */
+    padding: 20px; /* Optional: Add padding around the content */
+    height: 750px; /* Fixed height for the content */
+}

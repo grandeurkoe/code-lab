@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Services!</h1>
+  <div class="calculatorBlock">
+    <table>
+      <tr>
+        <td><label for="firstNumber">Number 1: </label></td>
+        <td><input type="text" id="firstNumber" [(ngModel)]="numberOne"/></td>
+      </tr>
+      <tr>
+        <td><label for="secondNumber">Number 2: </label></td>
+        <td><input type="text" id="secondNumber" [(ngModel)]="numberTwo"/></td>
+      </tr>
+      <tr>
+        <td><label for="result">Result: </label></td>
+        <td><input type="text" id="result" [value]="calculatedResult" disabled/></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button (click)="add()">Add</button>
+          <button (click)="subtract()">Subtract</button>
+          <button (click)="multiply()">Multiply</button>
+          <button (click)="divide()">Divide</button>          
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

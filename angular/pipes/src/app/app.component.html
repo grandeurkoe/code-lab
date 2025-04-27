@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Pipes!</h1>
+  <div class="dateBlock">
+    <h2>Date Pipe</h2>
+    <p>medium: {{todayDate | date:'medium'}}</p>
+    <p>short: {{todayDate | date:'short'}}</p>
+    <p>fullDate: {{todayDate | date:'fullDate'}}</p>
+    <p>longDate: {{todayDate | date:'longDate'}}</p>
+    <p>mediumDate: {{todayDate | date:'mediumDate'}}</p>
+    <p>shortDate: {{todayDate | date:'shortDate'}}</p>
+    <p>mediumTime: {{todayDate | date:'mediumTime'}}</p>
+    <p>dd-MM-y: {{todayDate | date:'dd-MM-y'}}</p>
+    <p>dd-MM-yy: {{todayDate | date:'dd-MM-yy'}}</p>
+  </div>
+  <div class="stringBlock">
+    <h2>String Pipe</h2>
+    <p>Original String: {{todayString}}</p>
+    <p>UPPERCASE: {{todayString | uppercase}}</p>
+    <p>lowercase: {{todayString | lowercase}}</p>
+  </div>
+  <div class="sliceBlock">
+    <h2>Slice Pipe</h2>
+    <p>Original String: {{todayString}}</p>
+    <p>Slice (11 to 20): {{todayString | slice:11:20}}</p>
+    <p>Another Slice (-9): {{todayString | slice:-9}}</p>
+  </div>
+  <div class="decimalBlock">
+    <h2>Decimal Pipe</h2>
+    <p>Unformatted Number: {{todayNumber}}</p>
+    <p>Formatted Number: {{todayNumber | number}}</p>
+    <p>Formatted Number: {{todayNumber | number:'5.1-2'}}</p>
+    <p>Formatted Number: {{todayNumber | number:'7.1-4'}}</p>
+  </div>
+  <div class="percentBlock">
+    <h2>Percent Pipe</h2>
+    <p>Unformatted Number: {{todayPercentNumber}}</p>
+    <p>Formatted Number: {{todayPercentNumber | percent}}</p>
+    <p>Formatted Number: {{todayPercentNumber | percent:'2.1-2'}}</p>
+  </div>
+  <div class="currencyBlock">
+    <h2>Currency Pipe</h2>
+    <p>Unformatted Currency: {{todayCurrency}}</p>
+    <p>Formatted (in dollars): {{todayCurrency | currency:'USD'}}</p>
+    <p>Formatted (in rupees): {{todayCurrency | currency:'INR'}}</p>
+  </div>
+  <div class="customBlock">
+    <h2>Custom Pipe</h2>
+    <p>Unformatted String: {{todayCustom}}</p>
+    <p>Formatted String: {{todayCustom | titlecase}}</p>
+  </div>
+</body>
+</html>

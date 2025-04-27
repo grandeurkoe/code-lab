@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.colorController {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.colorBlock {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}

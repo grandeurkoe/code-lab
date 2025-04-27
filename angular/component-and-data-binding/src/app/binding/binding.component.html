@@ -1,0 +1,27 @@
+<div id="bindingComponent">
+    <h2>Calculator!</h2>
+    <div class="bindingBlock">
+        <table>
+            <tr>
+                <td><label for="firstNumber">Number 1: </label></td>
+                <td><input type="text" id="firstNumber" name="firstNumber" [(ngModel)]="numberOne"></td>
+            </tr>
+            <tr>
+                <td><label for="secondNumber">Number 2: </label></td>
+                <td><input type="text" id="secondNumber" name="secondNumber" [(ngModel)]="numberTwo"></td>
+            </tr>
+            <tr>
+                <td><label for="resultNumber">Result: </label></td>
+                <td><input type="text" id="resultNumber" name="resultNumber" [value]="result" disabled></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button (click)="add()">Add</button>
+                    <button (click)="subtract()">Subtract</button>
+                    <button (click)="multiply()">Mutliply</button>
+                    <button (click)="divide()">Divide</button>
+                </td>
+            </tr>
+        </table>        
+    </div>
+</div>

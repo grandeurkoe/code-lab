@@ -1,0 +1,35 @@
+<h2>Template Driven Form!</h2>
+<div class="templateForm">
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+        <table>
+            <tr>
+                <td><label for="firstname">First Name: </label></td>
+                <td><input type="text" id="firstname" name="firstname" ngModel #firstname="ngModel"  required/></td>
+                <td>
+                    <div *ngIf="firstname.touched && firstname.invalid">
+                        <span *ngIf="firstname.errors?.['required']">First Name should not be blank!</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name: </label></td>
+                <td><input type="text" id="lastname" #lastname="ngModel" ngModel required/></td>
+                <td>
+                    <div *ngIf="lastname.touched && lastname.invalid">
+                        <span *ngIf="lastname.errors?.['required']">Last Name should not be blank!</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" id="email" #email="ngModel" ngModel required email/></td>
+                <td>
+                    <div *ngIf="email.touched && email.invalid">
+                        <span *ngIf="email.errors?.['required']">Email should not be blank!</span>
+                        <span *ngIf="email.errors?.['email']">Invalid Email format!</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

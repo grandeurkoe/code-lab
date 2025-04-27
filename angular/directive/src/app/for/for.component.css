@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.forComponent {
+    background-color: #FFADAD;
+    color: #660000;
+    height: 750px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    background-color: #ffd1d1;
+    color: #660000;
+    padding: 5px;
+}
+
+.forBlock {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

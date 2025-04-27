@@ -1,0 +1,60 @@
+<div class="forComponent">
+    <h2>*ngFor Structural Directive</h2>
+    <div class="forBlock">
+        <table>
+            <tr>
+                <th>Roll No.</th>
+                <th>Student Name</th>
+                <th>Course Name</th>
+                <th>Course Fees</th>
+            </tr>
+            <tr *ngFor="let student of studentList">
+                <td>{{student.rollno}}</td>
+                <td>{{student.studentName}}</td>
+                <td>{{student.courseName}}</td>
+                <td>${{student.courseFees}}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Employee No.</th>
+                <th>Employee Name</th>
+                <th>Skills</th>                
+            </tr>
+            <tr *ngFor="let employee of employeeList">
+                <td>{{employee.employeeNo}}</td>
+                <td>{{employee.employeeName}}</td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Skill ID</th>
+                            <th>Skill Name</th>
+                            <th>Experience</th>
+                        </tr>
+                        <tr *ngFor="let skill of employee.skills">
+                            <td>{{skill.skillId}}</td>
+                            <td>{{skill.skillName}}</td>
+                            <td>{{skill.experience}}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Product No.</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Price</th>
+            </tr>
+            <tr *ngFor="let product of productList; let i = index;">
+                <td>{{i + 1}}</td>
+                <td>{{product.productId}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.productDescription}}</td>
+                <td>${{product.productPrice}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

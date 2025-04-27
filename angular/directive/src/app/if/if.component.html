@@ -1,0 +1,8 @@
+<div class="ifComponent">
+    <h2>*ngIf Structural Directive and *ngStyle Attribute Directive</h2>
+    <div class="ifBlock">
+        <div *ngIf="myBlockName == 'DVOC'; then dvoc; else notdvoc"></div>
+        <ng-template #dvoc ><div [ngStyle]="{'background-color': backgroundColor}">The name of my block is DVOC!</div></ng-template>
+        <ng-template #notdvoc>The name of my block is not DVOC!</ng-template>
+    </div>
+</div>

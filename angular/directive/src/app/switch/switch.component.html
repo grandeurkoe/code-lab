@@ -1,0 +1,11 @@
+<div class="switchComponent">
+    <h2>*ngSwitch Structural Directive</h2>
+    <div class="switchBlock">
+        <div [ngSwitch]="color">
+            <div *ngSwitchCase="'red'" style="color: red;">This text is red.</div>
+            <div *ngSwitchCase="'blue'" style="color: blue;">This text is blue.</div>
+            <div *ngSwitchCase="'green'" style="color: green;">This text is green.</div>
+            <div *ngSwitchDefault>This text has default color.</div>
+        </div>
+    </div>
+</div>

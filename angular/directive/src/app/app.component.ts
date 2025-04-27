@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello, Angular!';
-  myName = 'Vishal Kushwaha';
-
-  greet(): string {
-    return `Welcome, ${this.myName}`;
-  }
+  title = 'directive';
 }

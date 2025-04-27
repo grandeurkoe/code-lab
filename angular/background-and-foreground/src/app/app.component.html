@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Foreground and Background Controller!</h1>
+  <div class="colorController">
+    <table>
+      <tr>
+        <td><label for="myForeground">Foreground Color: </label></td>
+        <td>
+          <select id="myForeground" (change)="onForegroundChange($event)">
+            <option value="#2E8B57">Sea Green</option>
+            <option value="#4B0082">Indigo</option>
+            <option value="#8B0000">Dark Red</option>
+            <option value="#4B0082">Indigo</option>
+            <option value="#00008B">Dark Blue</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="myBackground">Background Color: </label></td>
+        <td>
+          <select id="myBackground" (change)="onBackgroundChange($event)">
+            <option value="#FFB6C1">Light Pink</option>
+            <option value="#FFD700">Gold</option>
+            <option value="#ADD8E6">Light Blue</option>
+            <option value="#98FB98">Pale Green</option>
+            <option value="#F0E68C">Khaki</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="colorBlock" [ngStyle]="{'color': foregroundColor, 'background-color': backgroundColor}">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales luctus augue ac rutrum. Fusce non ex vitae justo tristique varius eget in urna. Nulla ac metus sit amet nibh consectetur mollis at in risus. Nulla non lacus eget odio pharetra auctor. In et justo dictum, vehicula leo pellentesque, ornare augue. Mauris congue ac dui id porta. Ut at diam ac ex tincidunt iaculis et sit amet arcu. Maecenas vitae lorem rutrum, scelerisque eros id, rutrum risus. Proin ultricies enim eu ante fringilla, nec euismod dui gravida. Vestibulum ac ipsum sagittis, consectetur libero non, vehicula risus. Integer ac lobortis tortor, eget sollicitudin metus. Nulla tincidunt sodales porttitor. Aliquam ac libero eu lorem facilisis condimentum eget sit amet sapien. Proin semper ullamcorper turpis, non aliquet mi rutrum vel. Fusce semper, eros eget interdum sollicitudin, tortor ipsum gravida odio, ut sodales est ipsum non velit. Duis eu tincidunt orci. </p>
+  </div>
+</body>
+</html>

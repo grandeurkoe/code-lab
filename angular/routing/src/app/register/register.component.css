@@ -1,0 +1,15 @@
+h2 {
+    text-align: center;
+}
+
+.templateForm {
+    background-color: #444444; /* Dark grey background */
+    color: #FFFFFF; /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+span {
+    color: red;
+}
