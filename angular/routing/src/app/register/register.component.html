@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td><label for="lastname">Last Name: </label></td>
-                <td><input type="text" id="lastname" #lastname="ngModel" ngModel required/></td>
+                <td><input type="text" id="lastname" name="lastname" #lastname="ngModel" ngModel required/></td>
                 <td>
                     <div *ngIf="lastname.touched && lastname.invalid">
                         <span *ngIf="lastname.errors?.['required']">Last Name should not be blank!</span>
@@ -22,12 +22,51 @@
             </tr>
             <tr>
                 <td><label for="email">Email: </label></td>
-                <td><input type="email" id="email" #email="ngModel" ngModel required email/></td>
+                <td><input type="email" id="email" name="email" #email="ngModel" ngModel required email/></td>
                 <td>
                     <div *ngIf="email.touched && email.invalid">
                         <span *ngIf="email.errors?.['required']">Email should not be blank!</span>
                         <span *ngIf="email.errors?.['email']">Invalid Email format!</span>
                     </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phoneno">Phone No.: </label></td>
+                <td><input type="tel" id="phoneno" name="phoneno" #phoneno="ngModel" ngModel required/></td>
+                <td>
+                    <div *ngIf="phoneno.touched && phoneno.invalid">
+                        <span *ngIf="phoneno.errors?.['required']">Phone should not be blank!</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender.: </label></td>
+                <td>
+                    <input type="radio" name="gender" id="male"  value="male" ngModel/>Male
+                    <input type="radio" name="gender" id="female"  value="female" ngModel/>Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="isMarried">Is Married?: </label></td>
+                <td>
+                    <input type="checkbox" name="isMarried" id="isMarried" ngModel/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city">City: </label></td>
+                <td>
+                    <select name="city" ngModel>
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Bangalore</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </td>
             </tr>
         </table>
